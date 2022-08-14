@@ -1,0 +1,52 @@
+
+<div>
+ 
+    <app-lineheaders woord="GameTube"  [first]="true"></app-lineheaders>
+    <div class="container-2">
+        <div class="left">
+            <iframe [src]="getUrl(currentVideo)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen allow="autoplay"></iframe>
+            <p>{{weergavenV}} weergaven  | {{datum}}</p>
+            <div class="top-video-tekst">
+            
+                <img src="https://www.theloadout.com/wp-content/uploads/2021/07/csgo-ranks.jpeg" alt="user">
+                <div class="tekst">
+                    <h2>{{currentTitle}}</h2>
+                    <p>{{currentInfo}}</p>
+                </div>
+            </div> 
+            
+            <hr>
+            <!-- commentaar -->
+            <div class="comments-container">
+                <input type="text" name="comment" id="comments"   [(ngModel)]="commentaar" placeholder="Voeg een openbare reactie toe…" required> 
+                <button id="btn" (click)="addComment(commentaar)"   >Voeg toe</button>
+            </div>
+            <!-- commentaar -->
+            <div class="commentaar" *ngFor="let item of users">
+                    <div>
+                        <p class="icon-user" [style.background]="item.color">{{item.icon}}</p>
+                    </div>
+                    <!-- icon -->
+                    <div class="commentaar-tekst">
+                           <!-- naam -->
+                        <p class="naam">{{item.name}}</p>
+                        <!-- commentaar -->
+                        <p>{{item.comment}}</p>
+                        <div class="trash-container" *ngIf="item.icon == 'G'" >
+                            <img  class="trashbin" (click)="deleteComment(item.id,1)" src="https://cdn-icons.flaticon.com/png/128/3256/premium/3256170.png?token=exp=1645092299~hmac=f9b745d0858acb6136f9a2c7266d92fe" alt="Trashbin">
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="right">
+            <div *ngFor="let containers of iframes" class="right-container">
+              <img class="theImg" [src]="containers.image" [alt]="containers.title" (click)="changeVideo(containers.id)"  (click)="incrementViews(containers.id)">
+                <div class="right-text">
+                    <h2>{{containers.title}}</h2>
+                    <p>{{containers.tekst}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>

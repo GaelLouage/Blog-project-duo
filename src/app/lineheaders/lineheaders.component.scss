@@ -1,0 +1,36 @@
+span {
+    width: 100%;
+    height: 0.1em;
+    color: #ffc107;
+    padding: 1px;
+    margin-top: 2.5em;
+    top: 50%;
+    background-color: #ffc107;
+    position: absolute;
+ }
+
+#first span{
+     margin-top: 5em;
+ }
+ 
+ .top-title {
+    position: relative;
+    width:80%;
+    padding-top: 5em;
+    margin: 0 auto 3em auto;
+ }
+
+ #first.top-title{
+     padding-top: 10em;
+ }
+
+ .top-title h2 {
+    text-align: center;
+    background-color: #ffc107;
+    color: white;
+    width: 10em;
+    margin: 0 auto;
+    z-index: 4;
+    position: relative;
+    border-radius: 0.5em;
+ }

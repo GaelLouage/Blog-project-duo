@@ -1,0 +1,7 @@
+mat-sidenav-container, mat-sidenav-content, mat-sidenav{
+    height: 100%; //Make Sure Main encompasses all of the height, causing Footer to be out of view at Init
+}
+
+mat-sidenav{
+    width: 250px; //Mobile/ Reactive Sidepanel width
+}

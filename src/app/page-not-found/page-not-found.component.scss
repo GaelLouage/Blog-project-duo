@@ -1,0 +1,41 @@
+.panel{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+h1{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bolder;
+
+    margin-top: 50px;
+    line-height: 45px;
+}
+
+
+h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding-top: 15px;
+    margin-bottom: 25px;
+}
+
+img{
+    max-height: 350px;
+}
+
+p{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+}
+a:hover{
+    color: #ffc107;
+}

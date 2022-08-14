@@ -1,0 +1,5 @@
+<div [style.background-image]="'url('+ currentImg +')'" class="banner">
+    <div class="container" >
+        <img *ngFor="let i of img" [src]="i.src" alt="Horizon Zero Dawn" (click)="changeImg(i.id)">
+    </div>
+</div>

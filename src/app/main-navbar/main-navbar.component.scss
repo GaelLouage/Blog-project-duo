@@ -1,0 +1,69 @@
+@import '../theme.scss';
+
+.navBar {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0% 10%;
+
+    position: sticky;
+    position: -webkit-sticky; /* Apple Gebruikers */
+    top: 0; /*navar altijd van boven*/
+    z-index: 1000; /*Laag 1000 voor z-index om niet te alten overlappen*/
+}
+
+.logo{
+    max-height: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: wheat;
+    margin-right: 5px;
+}
+
+a:hover, a:active{
+    // color: #fffb01;
+    color: #befff8;
+}
+
+ul li a{
+    margin: 0;
+    padding-right: 10px;
+
+}
+
+.navigation-items{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.burger{
+    font-size: xx-large;
+    
+}
+
+.logo-display{
+    font-size: x-large;
+    line-height: normal;
+    vertical-align: -3px;
+    transform: scale(1.5);
+}
+
+.icon-display{
+    font-size: large;
+    line-height: normal;
+    vertical-align: -3px;
+    transform: scale(1.5);
+    margin: 0px;
+}
+
+mat-toolbar{
+    border-radius: 3px;
+}
+
+@media(max-width: 959px){
+    mat-toolbar{
+        border-radius: 0px;
+    }
+}

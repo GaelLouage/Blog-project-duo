@@ -1,0 +1,30 @@
+
+.main-container-partners {
+    width: 25%;
+    margin: 5em auto 0 auto;
+}
+
+.container-3-partners {
+    display: flex;
+    overflow: hidden;
+    margin: 2% auto;
+    grid-gap: 5em;
+    scroll-behavior: smooth;
+    padding: 2em 0;
+}
+
+.container-3-partners img {
+    width: 50px;
+}
+
+
+@media screen and(max-width: 900px)  {
+    
+    
+.main-container-partners {
+    width: 50%;
+    margin: 5em auto 0 auto;
+}
+
+    
+}

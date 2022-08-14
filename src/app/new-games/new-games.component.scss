@@ -1,0 +1,64 @@
+
+.container-games {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    margin: 2% auto;
+    grid-gap: 5em;
+    scroll-behavior: smooth;
+    padding: 2em 0;
+}
+
+img {
+   border-radius: 2em; 
+}
+
+
+/*slider buttons*/ 
+
+.buttons-games-slider i:nth-child(2) {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    font-size: 50px;
+    color: red;
+    cursor: pointer;
+}
+
+.buttons-games-slider i:nth-child(1) {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    font-size: 50px;
+    color: red;
+    cursor: pointer;
+}
+
+.movie-main-container {
+    margin-top: 2em;
+    position: relative;
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+}
+
+@media screen and(max-width: 1200px) and (min-width: 800px) {  
+    .container-games {
+    margin: 2% auto 0 auto;
+    }
+}
+@media screen and(max-width: 900px)  {
+    .container-games {
+    margin: 30% auto 2% auto;
+    }
+  
+    .buttons-games-slider i:nth-child(2) {
+        font-size: 25px;
+    }
+    
+    .buttons-games-slider i:nth-child(1) {
+        font-size: 25px;
+    }
+    img {
+        height: 200px;
+    }
+}

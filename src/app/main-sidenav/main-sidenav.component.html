@@ -1,0 +1,30 @@
+<mat-nav-list id="side" class="background-primary">
+    <div class="container">
+        <a routerLink="main" (click)="onSidenavClose()" [routerLinkActive]="['is-active']">
+            <mat-icon class="icon-display">home</mat-icon><span class="nav-caption">{{menuItems[0][0]}}</span>
+        </a>
+        <a routerLink="blog" (click)="onSidenavClose()" [routerLinkActive]="['is-active']">
+            <mat-icon class="icon-display">rss_feed</mat-icon><span class="nav-caption">{{menuItems[1][0]}}</span>
+        </a>
+        <a routerLink="watchTube" (click)="onSidenavClose()" [routerLinkActive]="['is-active']">
+            <mat-icon class="icon-display">play_circle</mat-icon><span class="nav-caption">{{menuItems[2][0]}}</span>
+        </a>
+        <a routerLink="reviews" (click)="onSidenavClose()" [routerLinkActive]="['is-active']">
+            <mat-icon class="icon-display">sports_esports</mat-icon><span class="nav-caption">{{menuItems[3][0]}}</span>
+        </a>
+        <a routerLink="about" (click)="onSidenavClose()" [routerLinkActive]="['is-active']">
+            <mat-icon class="icon-display">help_outline</mat-icon><span class="nav-caption">{{menuItems[4][0]}}</span>
+        </a>
+    
+        <!-- CLOSE MENU BUTTON -->
+        <a [matMenuTriggerFor]="menu">
+            <mat-icon class="icon-display">account_circle</mat-icon>
+            <a matLine class="nav-caption">Account</a>
+        </a>
+    
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="onSidenavClose()">Settings</button>
+            <button mat-menu-item (click)="onSidenavClose()">Sign Out</button>
+        </mat-menu>
+    </div>
+</mat-nav-list>

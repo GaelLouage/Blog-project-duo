@@ -1,0 +1,28 @@
+<body>
+    <mat-sidenav-container>
+        <!-- Define Navigation -->
+        <mat-sidenav #sidenav role="navigation">
+            <app-main-sidenav (sidenavClose)="sidenav.close()"></app-main-sidenav> <!--Insert Side Navigation-->
+        </mat-sidenav>
+    
+        <!-- Indicate Content For Navigation -->
+        <mat-sidenav-content>
+    
+            <app-main-navbar (sidenavToggle)="sidenav.toggle()">
+                <!-- Insert Header Navigation Bar-->
+            </app-main-navbar> 
+            <app-top></app-top>
+            <main>
+                <router-outlet (activate)="onActivate()">
+                    <!-- MAIN ROUTED CONTENT GOES HERE -->
+                </router-outlet>
+            </main>
+    
+            <app-main-footer>
+                <!-- FOOTER IS STATIC -->
+            </app-main-footer>
+    
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</body>
+

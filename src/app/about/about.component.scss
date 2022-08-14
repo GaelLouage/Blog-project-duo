@@ -1,0 +1,104 @@
+#header{
+    padding-top: -140px;
+}
+
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    width: 80%;
+    margin: 5px auto;
+    justify-content: center;
+}
+
+.displayLogo{
+    margin: 0px auto 0px auto;
+}
+
+.displayLogo img{
+    max-height: 350px;
+}
+
+.panel {
+    width: 70%;
+    margin: 5px auto;
+    justify-content: center;
+}
+
+.name{
+    font-size: x-large;
+    margin-top: 25px;
+}
+
+.profile{
+    display: flex;
+    flex-flow: column;
+}
+.profile #left img{
+    order: 1;
+    justify-content: start;
+    align-items: left;
+}
+.profile #right img{
+    order: 2;
+    justify-content: end;
+}
+
+.hero{
+    display: flex;
+    flex-flow: row;
+}
+
+.hero img{
+    max-height: 250px;
+}
+
+.quote{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: #673ab7;
+
+    margin: 25px auto 25px auto;
+    padding: 25px;
+
+    max-width: 400px;
+    max-height: 250;
+    width: auto;
+    height: auto;
+
+    text-align: center;
+    position: relative;
+}
+.quote:before, .quote:after{
+    position: absolute;
+    font-size: 5rem;
+    color: #ffc107;
+    font-weight: 700;
+}
+.quote:before{
+    content: '\201c';
+     top: 0; left: 10px;    
+}
+.quote:after{
+    content: '\201d';
+    bottom: 0; right: 10px;    
+}
+
+.quote #left{
+    order: 2;
+    justify-content: end;
+}
+
+.quote #right{
+    order: 1;
+    justify-content: start;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+.text{
+    flex-grow: 5;
+    margin: 15px auto 10px;
+}

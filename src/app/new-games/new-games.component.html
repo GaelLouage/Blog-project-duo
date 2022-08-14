@@ -1,0 +1,10 @@
+<app-lineheaders woord="Recent Verschenen"></app-lineheaders>
+<div class="movie-main-container" >
+    <div class="buttons-games-slider">
+        <i (click)="gameScroller(-300)" class="fa fa-arrow-circle-o-left leftA"></i>
+        <i (click)="gameScroller(300)" class="fa fa-arrow-circle-o-right rightA"></i>
+    </div>
+    <div class="container-games" color="primary">
+      <a  *ngFor="let imgs of newGames" [href]="imgs.link" target="_blank"><img [src]="imgs.game" [alt]="imgs.title"></a>  
+    </div>
+</div>

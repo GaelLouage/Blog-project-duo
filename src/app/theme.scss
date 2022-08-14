@@ -1,0 +1,128 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+@import '../../node_modules/@angular/material/theming';
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+//Custom Angular Material SCSS Component Theme Import via Styles.scss
+@import '../styles';
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss (imported above).
+//For each palette, you can optionally specify a default, lighter, and darker hue. Available color palettes: https://material.io/design/color/
+
+//Grab Primary Purple Gaming Theme As Mixin from Angular Material
+$app-primary: mat-palette($mat-deep-purple);
+$app-accent:  mat-palette($mat-purple, A200, A100, A400);
+$app-warn:    mat-palette($mat-pink);
+$app-success: mat-palette($mat-blue);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+//Include The Class Variables for Theming through our Mixin (see primaryColorBG, accentcolorBG, warnColorBG)
+@include theme-color-grabber($app-theme);
+
+// Include CSS Variables to theme styles for core and each component used in your app.
+@include angular-material-theme($app-theme);
+
+$primary: map-get($app-theme, primary);
+$accent: map-get($app-theme, accent);
+$warn: map-get($app-theme, warn);
+
+//SCSS variables callable from Root
+// :root {
+//   --color-primary: #{mat-color($app-primary)};
+//   --color-accent: #{mat-color($app-accent)};
+//   --color-warn: #{mat-color($app-warn)};
+//   --color-success: #{mat-color($app-success)};
+// }
+
+//ALTERNATIVE themes from Angular Material Palettes 
+.valentineRed{
+    //Create a lighter Theme With brighter Palette for example
+    $red-primary: mat-palette($mat-red, 200,300,900);
+    $red-accent:  mat-palette($mat-deep-orange, 600, 100, 800);
+    $red-warn:    mat-palette($mat-orange, 600);
+    $red-theme: mat-dark-theme($red-primary, $red-accent, $red-warn);
+
+    @include theme-color-grabber($red-theme);
+    @include angular-material-theme($red-theme);
+}
+
+.halloweenOrange{
+    //Create a lighter Theme With brighter Palette for example
+    $orange-primary: mat-palette($mat-deep-orange, 200,300,900);
+    $orange-accent:  mat-palette($mat-yellow, 600, 100, 800);
+    $orange-warn:    mat-palette($mat-amber, 600);
+    $orange-theme: mat-dark-theme($orange-primary, $orange-accent, $orange-warn);
+
+    @include theme-color-grabber($orange-theme);
+    @include angular-material-theme($orange-theme);
+}
+
+.springGreen{
+    //Create a lighter Theme With brighter Palette for example
+    $green-primary: mat-palette($mat-red, 200,300,900);
+    $green-accent:  mat-palette($mat-deep-orange, 600, 100, 800);
+    $green-warn:    mat-palette($mat-orange, 600);
+    $green-theme: mat-dark-theme($green-primary, $green-accent, $green-warn);
+
+    @include theme-color-grabber($green-theme);
+    @include angular-material-theme($green-theme);
+}
+
+//Provide Theming Colors for CSS !!! Because Grabbing Theme colors from angular is a pain
+.text-primary{
+    background-color: #673ab7; //Deep Purple 500
+}
+
+.text-secondary{
+    background-color: #ffc107; //Amber 500
+}
+.text-warning{
+    background-color: red; //Just RED
+}
+
+.background-primary{
+    background-color: #673ab7; //Deep Purple 500
+}
+.background-secondary{
+    background-color: #ffc107; //Amber 500
+}
+.background-warning{
+    background-color: red; //Just RED
+}
+
+:root{
+    --color-primary: #673ab7;
+    --color-accent: #ffc107;
+    --color-warn: red;
+}
+
+#primary-colorBG{
+    background-color: #673ab7;
+}
+
+#accent-colorBG{
+    background-color: #ffc107;
+}
+
+#warn-colorBG{
+    background-color: red;
+}
+
+#primary-color{
+    color: #673ab7;
+}
+#accent-color{
+    color: #ffc107;
+}
+#warn-color{
+    color: red;
+}
+
+//Reactive Design 
+.is-active{
+    color: #ffc107; //Apply Amber color Palette
+}

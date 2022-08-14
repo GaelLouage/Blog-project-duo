@@ -1,0 +1,25 @@
+<app-lineheaders woord="Trending & Hot"></app-lineheaders>
+<div class="container-2">
+    <div class="left-text">
+        <div *ngFor="let lijst of lijstPopulaire">
+            <h2>{{lijst.top}}</h2>
+            <div class="counter-text">
+                <h2 class="ids">{{lijst.id}}.</h2>
+                <div class="title-text">
+                    <h2><a href="{{lijst.routerL}}">{{lijst.title}}</a></h2>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="container-2-images">
+        <div class="first-frame">
+            <iframe   src="https://www.youtube.com/embed/kq20AgoVta8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="container-4">
+                <img src="https://images6.alphacoders.com/910/thumb-1920-910352.jpg" alt="Ark">
+                <img src="https://cdn.vox-cdn.com/thumbor/EeQpOMN1j5f3Qmvo1oanEoByZzY=/1400x1050/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/20030737/xWZMNYm.png" alt="Playstation 5">
+                <img  src="https://cdn.akamai.steamstatic.com/steam/apps/359550/capsule_616x353.jpg?t=1639409141" alt="Xbox">
+                <img src="https://www.want.nl/wp-content/uploads/2019/11/League-of-Legends.jpg" alt="Lol">
+    </div>
+</div>

@@ -1,0 +1,72 @@
+[
+  {
+    "id":0,
+    "icon": "B",
+    "name": "Benji",
+    "comment": "Er is een verborgen blauwdruk in de doemachtige uitdaging van de zwarte eenden. Met de blauwdruk kun je vrijwel geforceerde choke gebruiken.",
+    "color": "red"
+  },
+  {
+    "id":1,
+    "icon": "T",
+    "name": "Toinon",
+    "comment": "Blij om Falcon steeds energieker te horen klinken in de loop der jaren dat ik hem hier en daar heb beluisterd. Hij lijkt hier zijn gelukkige plek te hebben gevonden",
+    "color": "green"
+  },
+  {
+    "id":2,
+    "icon": "H",
+    "name": "Hans",
+    "comment": "Ik vind het geweldig dat dit spel zoveel paaseieren heeft. Het laat echt zien hoeveel ze ervan hielden om dit spel te maken.",
+    "color": "blue"
+  },
+  {
+    "id":3,
+    "icon": "G",
+    "name": "Gael",
+    "comment": "De Hoverboard is een verwijzing naar Back to the Future, en Tolga en Fatin noemden een Dr. Emmett Brown op de radio, die verder refereerde aan Back to the Future. De 'metgezel' is ook Spike, een hoofdpersonage uit Dying Light 1. ",
+    "color": "yellow"
+  },
+  {
+    "id":4,
+    "icon": "J",
+    "name": "Jan",
+    "comment": "Het fiets-paasei ontgrendelt eigenlijk een parkour-parcours waarbij je op geïmproviseerde platforms de VNC-toren op moet fietsen, best leuk. Als je de missie op een bepaalde plek beëindigt, valt de motor in het speelbare gebied en kun je buiten de uitdaging rondrijden",
+    "color": "purple"
+  },
+  {
+    "id":5,
+    "icon": "B",
+    "name": "Bart",
+    "comment": "dus wat kanttekeningen! de vereffenaar, de man die je de cyberpunkwapens geeft, lijkt te verdwijnen nadat je het hoofdverhaal hebt verslagen, of het nu een bug is of niet.",
+    "color": "orange"
+  },
+  {
+    "id":6,
+    "icon": "H",
+    "name": "Harald",
+    "comment": "Ik ben dol op de paaseieren in dit spel, zelfs sommige zijmissies zijn hilarisch. Er is een zijmissie waarbij je een man helpt die vroeger een scheikundeleraar op de middelbare school was en nu drugs maakt voor afvalligen. Een kleine knipoog naar Breaking Bad, wat cool was. Dit is gewoon gevuld met plezier.",
+    "color": "yellow"
+  },
+  {
+    "id":7,
+    "icon": "S",
+    "name": "Steven",
+    "comment": "De Dev-kamer die je naar elke kamer kunt slingeren, ze geven je camera's aan de rand van het gebouw. Ik stierf ontelbare keren door valschade voordat ik me dit realiseerde.",
+    "color": "red"
+  },
+  {
+    "id":8,
+    "icon": "K",
+    "name": "Kristof",
+    "comment": "De Dev-kamer die je naar elke kamer kunt slingeren",
+    "color": "green"
+  },
+  {
+    "id":9,
+    "icon": "B",
+    "name": "Benji",
+    "comment": "Er is een verborgen blauwdruk in de doemachtige uitdaging van de zwarte eenden. Met de blauwdruk kun je vrijwel geforceerde choke gebruiken.",
+    "color": "red"
+  }
+]

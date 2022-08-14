@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+/* DO NOT IMPORT theme.scss !! AVOID INFINITE IMPORT LOOP!! */
+
+// Importing Material Theming Colors
+@import '../node_modules/@angular/material/theming';
+
+// Define a custom mixin that takes in the current theme
+@mixin theme-color-grabber($theme) {
+    
+  // Parse the theme and create variables for each color in the pallete
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+
+  // Create theme specfic styles
+  .primaryColorBG {
+    background-color: mat-color($primary);
+  }
+  .accentColorBG {
+    background-color: mat-color($accent);
+  }
+  .warnColorBG {
+    background-color: mat-color($warn);
+  }
+}
+
+// General Styling
+html, body { height: 100%; margin: 0;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}

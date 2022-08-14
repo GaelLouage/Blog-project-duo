@@ -1,0 +1,41 @@
+
+    <div class="container">
+        <div class="main-container">
+    
+            <h2>{{headerTextTop}}</h2>
+            <p> {{toptekst}}</p>
+                <div class="the-img">
+                    <img [src]="linkImgOne" alt="Ark">
+                </div>
+               
+                <p>{{tekstOnder1}}</p>
+                    <div class="the-img">
+                        <img [src]="linkImgTwo" alt="Ark">
+                    </div>
+                <p>{{tekstOnder2}}</p>    
+        </div>
+        <div class="second-container" [style.background-image]="banner">
+            <div class="response">
+            <h2>Aanbevolen video's</h2>
+            <div class="the-img">
+                <img [src]="imgSecondContainerOne" alt="Ark">
+            </div>
+            <div>
+                <div class="container-2-right">
+                    <h2>{{h2One}}</h2>
+                    <iframe  [src]="getUrl(iframeSourceOne)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="container-2-right">
+                    <h2>{{h2Two}}</h2>
+                    <iframe [src]="getUrl(iframeSourceTwo)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+            </div>
+    
+        
+        </div>
+        
+        </div>
+    </div>
+    <app-partners></app-partners>
+

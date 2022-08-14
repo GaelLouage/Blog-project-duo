@@ -1,0 +1,43 @@
+@import '../theme.scss';
+
+mat-nav-list{
+    color: wheat;
+}
+
+a {
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+
+    padding: 5px auto;
+}
+
+a:hover, a:active{
+    color: wheat;
+}
+
+.icon-display{
+    font-size: x-large;
+    line-height: normal;
+    vertical-align: -3px;
+    transform: scale(1.5);
+    margin: 5px auto;
+}
+
+.nav-caption{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+#side{
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5px;
+    width: 80%;
+    margin: 15px auto;
+}
+
